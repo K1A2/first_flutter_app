@@ -13,6 +13,8 @@ class MyApp extends StatefulWidget {
 
 class _MyApp extends State<MyApp> {
   var switchValue = false;
+  String test = 'hello';
+  Color _color = Colors.blue;
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +27,20 @@ class _MyApp extends State<MyApp> {
         darkTheme: ThemeData.light(),
         home: Scaffold(
           body: Center(
-            child: Switch(
-              value: switchValue,
-              onChanged: (value) {
-                setState(() {
-                  print(value);
-                  switchValue = value;
-                });
+            child: ElevatedButton(
+              child: Text('$test'),
+              onPressed: () {
+                if (test == 'hello') {
+                  setState(() {
+                    test = 'flutter';
+                  });
+                } else {
+                  setState(() {
+                    test = 'hello';
+                  });
+                }
               },
-            ),
+            )
           ),
         )
     );
