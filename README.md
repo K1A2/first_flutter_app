@@ -1,6 +1,7 @@
 # first_flutter_app
 
-My Firsat Flutter App
+My Firsat Flutter App  
+플러터 첫 학습
 
 ## Getting Started
 
