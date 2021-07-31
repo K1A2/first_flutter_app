@@ -22,7 +22,16 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Text('hello\nflutter', textAlign: TextAlign.center,)
+      home: Container(
+        color: Colors.white,
+        child: Center(
+          child: Text(
+            'hello\nflutter',
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.blue, fontSize: 20),
+          ),
+        ),
+      )
     );
   }
 }
